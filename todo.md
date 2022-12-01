@@ -1,0 +1,36 @@
+File system (src/fs)
+1. [x] create.js
+2. [x] copy.js
+3. [ ] rename.js
+4. [ ] delete.js
+5. [ ] list.js
+6. [ ] read.js
+
+Command line interface(src/cli)
+1. [ ] env.js
+2. [ ] args.js
+
+Modules(src/modules)
+1. [x] cjsToEsm.cjs
+
+Hash (src/hash)
+1. [ ] calcHash.js
+
+Streams (src/streams)
+1. [ ] read.js
+2. [ ] write.js
+3. [ ] transform.js
+
+Zlib (src/zip)
+1. [ ] compress.js
+2. [ ] decompress.js
+
+Worker Threads (src/wt)
+1. [ ] worker.js
+2. [ ] main.js
+
+Child Processes (src/cp)
+1. [ ] cp.js
+
+
+https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/nodejs-basics/assignment.md
