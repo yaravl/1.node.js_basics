@@ -8,7 +8,6 @@ const __dirname = path.dirname(__filename);
 const pathToFile = path.join(__dirname, "files", "fileToRemove.txt");
 
 const remove = async (filePath) => {
-  aas
   try {
     await fs.rm(filePath);
   } catch (e) {

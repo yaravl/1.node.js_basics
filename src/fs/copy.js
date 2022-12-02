@@ -26,7 +26,7 @@ const copy = async (srcFileName, destFileName) => {
 
     if (foldersExists) throw "FS operation failed";
 
-    await fs.mkdir(pathJoin(dest));
+    await fs.mkdir(pathJoin(destFileName));
 
     const entries = await fs.readdir(pathJoin(srcFileName), {
       withFileTypes: true,
