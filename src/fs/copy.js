@@ -18,19 +18,25 @@ const folderIsExists = async (dirName) => {
   }
 };
 
-const copy = async (src, dest) => {
+const copy = async (srcFileName, destFileName) => {
   try {
     const foldersExists =
-      !(await folderIsExists(src)) || (await folderIsExists(dest));
+      !(await folderIsExists(srcFileName)) ||
+      (await folderIsExists(destFileName));
 
     if (foldersExists) throw "FS operation failed";
 
     await fs.mkdir(pathJoin(dest));
 
-    const entries = await fs.readdir(pathJoin(src), { withFileTypes: true });
+    const entries = await fs.readdir(pathJoin(srcFileName), {
+      withFileTypes: true,
+    });
 
     for (const entry of entries) {
-      await fs.copyFile(pathJoin(src, entry.name), pathJoin(dest, entry.name));
+      await fs.copyFile(
+        pathJoin(srcFileName, entry.name),
+        pathJoin(destFileName, entry.name)
+      );
     }
   } catch (err) {
     throw new Error(err);
