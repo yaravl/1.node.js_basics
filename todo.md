@@ -1,10 +1,10 @@
 File system (src/fs)
 1. [x] create.js
 2. [x] copy.js
-3. [ ] rename.js
-4. [ ] delete.js
-5. [ ] list.js
-6. [ ] read.js
+3. [x] rename.js
+4. [x] delete.js
+5. [x] list.js
+6. [x] read.js
 
 Command line interface(src/cli)
 1. [ ] env.js
@@ -14,7 +14,7 @@ Modules(src/modules)
 1. [x] cjsToEsm.cjs
 
 Hash (src/hash)
-1. [ ] calcHash.js
+1. [x] calcHash.js
 
 Streams (src/streams)
 1. [ ] read.js
