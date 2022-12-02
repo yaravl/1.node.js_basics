@@ -16,16 +16,16 @@ const fileIsExists = async (path) => {
     return false;
   }
 };
-const create = async (path, data) => {
+const create = async (filePath, fileData) => {
   try {
     const fileExist = await fileIsExists(path);
 
     if (fileExist) throw "FS operation failed";
 
-    await fs.writeFile(path, data);
+    await fs.writeFile(filePath, fileData);
   } catch (err) {
     throw new Error(err);
   }
 };
 
-create(pathToFile, fileData);
+await create(pathToFile, fileData);
