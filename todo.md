@@ -30,7 +30,7 @@ Worker Threads (src/wt)
 2. [ ] main.js
 
 Child Processes (src/cp)
-1. [ ] cp.js
+1. [x] cp.js
 
 
 https://github.com/AlreadyBored/nodejs-assignments/blob/main/assignments/nodejs-basics/assignment.md
