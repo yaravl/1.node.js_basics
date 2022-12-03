@@ -7,8 +7,8 @@ File system (src/fs)
 6. [x] read.js
 
 Command line interface(src/cli)
-1. [ ] env.js
-2. [ ] args.js
+1. [x] env.js
+2. [x] args.js
 
 Modules(src/modules)
 1. [x] cjsToEsm.cjs
@@ -17,9 +17,9 @@ Hash (src/hash)
 1. [x] calcHash.js
 
 Streams (src/streams)
-1. [ ] read.js
-2. [ ] write.js
-3. [ ] transform.js
+1. [x] read.js
+2. [x] write.js
+3. [x] transform.js
 
 Zlib (src/zip)
 1. [ ] compress.js

@@ -18,24 +18,24 @@ const folderIsExists = async (dirName) => {
   }
 };
 
-const copy = async (srcFileName, destFileName) => {
+const copy = async (srcDirName, destDirName) => {
   try {
     const foldersExists =
-      !(await folderIsExists(srcFileName)) ||
-      (await folderIsExists(destFileName));
+      !(await folderIsExists(srcDirName)) ||
+      (await folderIsExists(destDirName));
 
     if (foldersExists) throw "FS operation failed";
 
-    await fs.mkdir(pathJoin(destFileName));
+    await fs.mkdir(pathJoin(destDirName));
 
-    const entries = await fs.readdir(pathJoin(srcFileName), {
+    const entries = await fs.readdir(pathJoin(srcDirName), {
       withFileTypes: true,
     });
 
     for (const entry of entries) {
       await fs.copyFile(
-        pathJoin(srcFileName, entry.name),
-        pathJoin(destFileName, entry.name)
+        pathJoin(srcDirName, entry.name),
+        pathJoin(destDirName, entry.name)
       );
     }
   } catch (err) {
@@ -43,6 +43,6 @@ const copy = async (srcFileName, destFileName) => {
   }
 };
 
-copy("files", "files_copy2");
+await copy("files", "files_copy2");
 
 // возможно заменить проверку на fs.stat
