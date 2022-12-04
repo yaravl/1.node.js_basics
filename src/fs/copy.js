@@ -44,5 +44,3 @@ const copy = async (srcDirName, destDirName) => {
 };
 
 await copy("files", "files_copy2");
-
-// возможно заменить проверку на fs.stat
