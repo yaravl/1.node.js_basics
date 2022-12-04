@@ -15,7 +15,7 @@ const performCalculations = async () => {
     for (let i = 0; i < cpus; i++) {
       arrOfPromisesWorkers.push(
         new Promise((resolve) => {
-          new Worker(pathToWorker, { workerData: num + 1 })
+          new Worker(pathToWorker, { workerData: num + i })
             .on("message", (res) => {
               console.log(res);
               resolve([{ status: "resolve", data: res }]);
