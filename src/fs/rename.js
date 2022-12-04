@@ -17,3 +17,5 @@ const rename = async (srcPath, destPath) => {
 };
 
 await rename(pathToSrcFile, pathToDestFile);
+
+console.log('boop')
