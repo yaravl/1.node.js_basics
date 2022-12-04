@@ -11,7 +11,7 @@ Command line interface(src/cli)
 2. [x] args.js
 
 Modules(src/modules)
-1. [x] cjsToEsm.cjs
+1. [ ] cjsToEsm.cjs
 
 Hash (src/hash)
 1. [x] calcHash.js
@@ -22,12 +22,12 @@ Streams (src/streams)
 3. [x] transform.js
 
 Zlib (src/zip)
-1. [ ] compress.js
-2. [ ] decompress.js
+1. [x] compress.js
+2. [x] decompress.js
 
 Worker Threads (src/wt)
-1. [ ] worker.js
-2. [ ] main.js
+1. [x] worker.js
+2. [x] main.js
 
 Child Processes (src/cp)
 1. [x] cp.js
